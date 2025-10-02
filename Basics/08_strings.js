@@ -4,9 +4,7 @@ const repoCount = 50;
 // console.log("My name is " + name + " and my repo count is " + repoCount);    NOT  RECOMMENDED
 
 /*   String Interpolation -> is a way to embed variables or expressions directly inside a string 
-console.log(
-  `My name is ${name.toUpperCase()} and my repo count is ${repoCount}`
-);
+console.log(`My name is ${name.toUpperCase()} and my repo count is ${repoCount}`);
 */
 let nameObj = new String("Rajessssh");
 //console.log(nameObj);
