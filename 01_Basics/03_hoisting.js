@@ -26,3 +26,13 @@ let y = 10;
 In summary, hoisting allows JavaScript to handle variable and function declarations flexibly, but can sometimes lead to confusion if not properly understood, especially with let and const which enforce stricter temporal scoping rules.
 
 */
+// Print("Rajesh"); //  Reference Error: Cannot access 'print' before initialization
+let Print = function (Name) {
+  console.log(`Hello ${Name}`);
+};
+Print("Rajesh");
+
+Display("Raj Naik"); // Hoisted
+function Display(Name) {
+  console.log(Name);
+}

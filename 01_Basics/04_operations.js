@@ -15,9 +15,9 @@ let str1 = "Hello ",
 let str3 = str1 + str2;
 //console.log(str3);
 
-// console.log(1 + "2");
-// console.log("1" + 2);
-// console.log("1" + "2");
+// console.log(1 + "2");  // 12
+// console.log("1" + 2);  // 12
+// console.log("1" + "2"); // 12
 // console.log(1 + 2 + "2");  // 32
 // console.log("1" + 2 + 2);  // 122
 

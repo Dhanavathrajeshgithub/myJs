@@ -17,7 +17,7 @@ console.table([accountId, accountEmail, accPass, accountCity]);
 Let and const are block scoped
 var is funtion scoped
 */
-console.log(a);
+console.log(a); // undefined
 {
   let city = "Banglore";
   var a = 10;

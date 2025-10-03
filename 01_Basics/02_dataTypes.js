@@ -5,7 +5,7 @@ let salary = 4500.89;
 let name = "Rajesh";
 let isLoggedIn = false;
 
-// number , string, boolean, null , undefined ,   -> primitive
+// number , string, boolean, null , undefined ,BigInt   -> primitive
 // symbol->unique identifier    -> primitive
 
 // object -> non primitive -> array, function, object
