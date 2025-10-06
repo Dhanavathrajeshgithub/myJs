@@ -1,8 +1,7 @@
-/*
 const accountId = 122344;
 let accountEmail = "Raj@email.com";
 var accPass = "12345";
-accountCity = "Delhi";  // global variable attached to window object
+accountCity = "Delhi"; // global variable attached to window object
 
 // accountId = 123;  not allowed
 accountEmail = "microsoft@gmail.com";
@@ -11,11 +10,10 @@ accountCity = "Hyderabad";
 
 console.log(accountId);
 console.table([accountId, accountEmail, accPass, accountCity]);
-*/
 
 /*
 Let and const are block scoped
-var is funtion scoped
+var is function scoped
 */
 console.log(a); // undefined
 {

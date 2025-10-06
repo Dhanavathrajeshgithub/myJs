@@ -14,4 +14,4 @@ let myObj = {
 };
 let newObj = myObj; // reference of myObj is assigned to newObj
 newObj.email = "Raj@email.com";
-console.log(myObj.email);
+console.log(myObj.email); // "Raj@email.com"

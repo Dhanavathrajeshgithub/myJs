@@ -2,11 +2,18 @@
   let a = 10;
   const b = 20;
   var c = 30;
+  {
+    var d = 100;
+    {
+      var e = 200;
+    }
+  }
 }
 // console.log(a);  // ReferenceError: a is not defined
 // console.log(b);  // ReferenceError: b is not defined
 //console.log(c); // 30  (var is function-scoped or globally scoped)
-
+console.log(d); // 100   (""                    "")
+console.log(e); // 200   (""                    "")
 //   ###########     nested scope    ###########
 function one() {
   const username = "Rajesh";

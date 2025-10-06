@@ -20,9 +20,16 @@ function chai() {
 //chai();
 
 const chai2 = () => {
-  console.log(this); // refers to outer scope -> {} in node.js , window object in browser
+  console.log(this); //  refers to outer scope -> {} in node.js , window object in browser
+  console.log(this.userName); // undefined because this refers to global object where userName is not defined
+
+  const innerChai = () => {
+    console.log(this); // refers to outer scope -> {} in node.js , window object in browser
+    console.log(this.userName); // undefined because this refers to global object where userName is not defined
+  };
+  innerChai();
 };
-//chai2();
+chai2();
 
 // const addTwo = (num1, num2) => {
 //   return num1 + num2;
