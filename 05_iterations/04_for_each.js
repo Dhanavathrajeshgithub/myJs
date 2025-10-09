@@ -1,4 +1,5 @@
 // FOR EACH  ->  higher order function
+// Only for arrays -> array method
 
 let languages = ["Cpp", "py", "Java", "JS", "C"];
 
