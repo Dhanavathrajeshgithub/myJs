@@ -13,7 +13,7 @@ languages.forEach((lang) => {
 
 // Full structure
 languages.forEach((lang, idx, arr) => {
-  console.log(lang, idx, arr);
+  //console.log(lang, idx, arr);
 });
 
 let arr = [
@@ -28,5 +28,12 @@ let arr = [
 ];
 
 arr.forEach((obj) => {
-  console.log(obj.lang);
+  //console.log(obj.lang);
 });
+
+// FOR EACH loop returns nothing
+let arr2 = [1, 2, 3];
+let values = arr2.forEach((val) => {
+  return val;
+});
+console.log(values); // undefined
