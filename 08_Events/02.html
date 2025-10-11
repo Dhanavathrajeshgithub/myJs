@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+  </body>
+  <script>
+    // setTimeout,clearTimeout, setInterval,clearInterval  are not part of core js, they are part of web api
+
+    let h1 = document.querySelector("h1");
+    let start = document.querySelector("#start");
+    let stop = document.querySelector("#stop");
+
+    const sayMyName = () => {
+      h1.innerHTML = "<i>Js best series</i>";
+    };
+
+    // const greet = setTimeout(sayMyName, 2000);
+    // stop.addEventListener("click", () => {
+    //   clearTimeout(greet);
+    // });
+
+    const displayTime = (str) => {
+      let date = new Date();
+      h1.innerHTML = `<i>${str}, ${date.toLocaleTimeString()}</i>`;
+    };
+    let clock = null;
+    start.addEventListener("click", () => {
+      clock = setInterval(displayTime, 1000, "Hello");
+    });
+    stop.addEventListener("click", () => {
+      if (clock) {
+        clearInterval(clock);
+        clock = null;
+        h1.innerHTML = "Chai aur code";
+      }
+    });
+  </script>
+</html>
